@@ -75,9 +75,35 @@ Extracción de Información:
 
 ■	Año
 
-**3. Validación y Normalización de Datos:**
+3. Validación y Normalización de Datos:
 
 
-○	Validación de formatos: Verificar que los datos extraídos cumplan con formatos esperados (ej. formato del RUC, formato de fecha).
+○	Validación de formatos: Verificar que los datos extraídos cumplan con formatos esperados en las variables más importantes: VIN_CHASIS, RUC, NUMERO_FACTURA, FECHA_DOCUMENTO, TOTAL, SUBTOTAL, IVA.
 
-○	Normalización de datos: Estandarizar los datos extraídos (ej. convertir todas las fechas al mismo formato).
+○	Normalización de datos: Estandarizar los datos extraídos: convertir todas las fechas al mismo formato.
+
+**ALCANCE EXCLUIDO**
+
+**Funcionalidades Fuera del Alcance de Facturas Vehiculares**
+Procesamiento de Otros Documentos Bancarios: No se incluirá el procesamiento de cheques, extractos bancarios, solicitudes de crédito, u otros documentos bancarios.
+
+Soporte para Idiomas Adicionales: Inicialmente, “VeriFactura”  no soportará idiomas distintos al español. La expansión a otros idiomas requeriría investigación y entrenamiento adicionales.
+
+**Funcionalidades de Automatización Bancaria Amplia**
+Aprobación Automática de Créditos: Aunque “VeriFactura” extraerá datos relevantes para la aprobación de créditos, NO tomará decisiones automáticas de aprobación o rechazo. La decisión final permanece en manos de los analistas bancarios.
+
+**Funcionalidades de Pre-procesamiento de Imágenes Extremas**
+Restauración de Imágenes Severamente Dañadas: “VeriFactura” no intentará restaurar imágenes con daños extremos (ej., borrosas, quemadas, rasgadas).
+
+**Justificación de Exclusiones:**
+Las exclusiones anteriores se basan en la necesidad de mantener el proyecto enfocado, realista y alcanzable dentro del plazo de 6 semanas. La inclusión de estas funcionalidades adicionales aumentaría significativamente la complejidad, el costo y el riesgo del proyecto. Además, algunas de estas funcionalidades podrían considerarse como mejoras futuras o fases posteriores del desarrollo.
+
+# 3. MÉTRICAS
+
+Para medir el desempeo del modelo, se han definido las siguientes métricas:
+
+| KPI | Definición | Umbral Objetivo | Cuándo utilizar | Cálculo |  
+| :---------: | :----------: | :---------: | :----------: | :----------: |
+| F1-Score |   Media armónica precision/recall   |  ≥ 0.95   |  Clases desbalanceadas   | 2 * (Precisión * Recall) / (Precisión + Recall)
+| Tasa error OCR    |    Tasa de error OCR (Character Error Rate – CER) en campos estructurados y críticos (VIN, RUC)  |  <10%   |  Minimizar los falsos positivos   | FP / (FP + VN)
+| Tasa intervención humana |    Facturas que requieren intervención manual  |  <20%   |  Para errores de OCR o mal uso del LLM   | (Facturas manuales / Total de facturas procesadas) * 100
