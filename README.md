@@ -107,3 +107,5 @@ Para medir el desempeo del modelo, se han definido las siguientes métricas:
 | F1-Score |   Media armónica precision/recall   |  ≥ 0.95   |  Clases desbalanceadas   | 2 * (Precisión * Recall) / (Precisión + Recall)
 | Tasa error OCR    |    Tasa de error OCR (Character Error Rate – CER) en campos estructurados y críticos (VIN, RUC)  |  <10%   |  Minimizar los falsos positivos   | FP / (FP + VN)
 | Tasa intervención humana |    Facturas que requieren intervención manual  |  <20%   |  Para errores de OCR o mal uso del LLM   | (Facturas manuales / Total de facturas procesadas) * 100
+
+
