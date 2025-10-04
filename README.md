@@ -100,7 +100,7 @@ Las exclusiones anteriores se basan en la necesidad de mantener el proyecto enfo
 
 # 3. FLUJO DEL PROCESO DE AUTOMATIZACIÓN DE FACTURAS
 
-Lectura de información (pdf, png, xml) -->  OCR para escaneo --> Extracción por plantillas --> Normalización -->JSON reultante --> Clasificación con IA
+Lectura de información (pdf, png, xml) -->  OCR para escaneo --> Extracción por plantillas --> Normalización -->JSON resultante --> Clasificación de registro con IA
 
 # 4. MÉTRICAS
 
@@ -111,5 +111,18 @@ Para medir el desempeo del modelo, se han definido las siguientes métricas:
 | F1-Score |   Media armónica precision/recall   |  ≥ 0.95   |  Clases desbalanceadas   | 2 * (Precisión * Recall) / (Precisión + Recall)
 | Tasa error OCR    |    Tasa de error OCR (Character Error Rate – CER) en campos estructurados y críticos (VIN, RUC)  |  <10%   |  Minimizar los falsos positivos   | FP / (FP + VN)
 | Tasa intervención humana |    Facturas que requieren intervención manual  |  <20%   |  Para errores de OCR o mal uso del LLM   | (Facturas manuales / Total de facturas procesadas) * 100
+
+Utilizando como variable objetivo CLASE, se obtienen las siguientes métricas con el dataset seleccionado:
+|   | precision | recall | f1-score | support |  
+| :---------: | :----------: | :---------: | :----------: | :----------: |
+| AUTOMÓVIL |   1.00  |  1.00   |  1.00   | 1
+| CAMIÓN    |    0.50  |  1.00   |  0.67   | 1
+| CAMIONETA    | 1.00  |  0.50   |  0.67   | 2
+
+| accuracy    |   |     |  0.75   | 4
+| macro avg   | 0.83   |  0.83    |  0.78   | 4
+| weighted avg  | 0.88  | 0.75    |  0.75   | 4
+
+
 
 
