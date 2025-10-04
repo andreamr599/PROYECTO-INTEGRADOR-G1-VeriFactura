@@ -127,6 +127,7 @@ Utilizando como variable objetivo CLASE, se obtienen las siguientes métricas co
 
 
 **MATRIZ DE CONFUSIÓN - RANDOM FOREST**
+
 <img width="533" height="370" alt="image" src="https://github.com/user-attachments/assets/ac5744a6-502a-4bed-8fd7-623fc1471a83" />
 
 Utilizando como variable objetivo ETIQUETA, se obtienen las siguientes métricas con el dataset seleccionado:
