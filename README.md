@@ -126,5 +126,23 @@ Utilizando como variable objetivo CLASE, se obtienen las siguientes métricas co
 | weighted avg  | 0.88  | 0.75    |  0.75   | 4
 
 
+**MATRIZ DE CONFUSIÓN - RANDOM FOREST**
+<img width="533" height="370" alt="image" src="https://github.com/user-attachments/assets/ac5744a6-502a-4bed-8fd7-623fc1471a83" />
 
+Utilizando como variable objetivo ETIQUETA, se obtienen las siguientes métricas con el dataset seleccionado:
+|   | precision | recall | f1-score | support |  
+| :---------: | :----------: | :---------: | :----------: | :----------: |
+| COMPLETA |   1.00  |  1.00   |  1.00   | 2
+| INCOMPLETA    |    01.00  |  1.00   |  1.00   | 4
+
+|   | precision | recall | f1-score | support |  
+| :---------: | :----------: | :---------: | :----------: | :----------: |
+| accuracy    |   |     |  1.00   | 6
+| macro avg   | 1.00   |  1.00    |  1.00   | 6
+| weighted avg  | 1.00  | 1.00    |  1.00   | 6
+
+
+**MATRIZ DE CONFUSIÓN - RANDOM FOREST**
+
+<img width="545" height="366" alt="image" src="https://github.com/user-attachments/assets/ad3910e9-f020-4561-97bb-a10417817cce" />
 
