@@ -98,7 +98,11 @@ Restauración de Imágenes Severamente Dañadas: “VeriFactura” no intentará
 **Justificación de Exclusiones:**
 Las exclusiones anteriores se basan en la necesidad de mantener el proyecto enfocado, realista y alcanzable dentro del plazo de 6 semanas. La inclusión de estas funcionalidades adicionales aumentaría significativamente la complejidad, el costo y el riesgo del proyecto. Además, algunas de estas funcionalidades podrían considerarse como mejoras futuras o fases posteriores del desarrollo.
 
-# 3. MÉTRICAS
+# 3. FLUJO DEL PROCESO DE AUTOMATIZACIÓN DE FACTURAS
+
+Lectura de información (pdf, png, xml) -->  OCR para escaneo --> Extracción por plantillas --> Normalización -->JSON reultante --> Clasificación con IA
+
+# 4. MÉTRICAS
 
 Para medir el desempeo del modelo, se han definido las siguientes métricas:
 
