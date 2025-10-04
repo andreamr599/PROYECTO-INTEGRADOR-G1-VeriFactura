@@ -102,6 +102,8 @@ Las exclusiones anteriores se basan en la necesidad de mantener el proyecto enfo
 
 Lectura de información (pdf, png, xml) -->  OCR para escaneo --> Extracción por plantillas --> Normalización -->JSON resultante --> Clasificación de registro con IA
 
+<img width="146" height="472" alt="image" src="https://github.com/user-attachments/assets/d92040e6-b37f-48e0-8ce3-595167b99fed" />
+
 # 4. MÉTRICAS
 
 Para medir el desempeo del modelo, se han definido las siguientes métricas:
