@@ -119,6 +119,7 @@ Utilizando como variable objetivo CLASE, se obtienen las siguientes métricas co
 | CAMIÓN    |    0.50  |  1.00   |  0.67   | 1
 | CAMIONETA    | 1.00  |  0.50   |  0.67   | 2
 
+| :---------: | :----------: | :---------: | :----------: | :----------: |
 | accuracy    |   |     |  0.75   | 4
 | macro avg   | 0.83   |  0.83    |  0.78   | 4
 | weighted avg  | 0.88  | 0.75    |  0.75   | 4
