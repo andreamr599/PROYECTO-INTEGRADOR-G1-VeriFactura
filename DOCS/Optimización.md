@@ -30,10 +30,10 @@ El modelo de clasificación a utilizar es Random Forest y utiliza:
 - max_samples — proporción del dataset usada por cada árbol (submuestreo)
 
 **Métricas iniciales**
-![alt text](image-1.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-1.png)
 
 **Hiperparámetros**
-![alt text](image-3.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-3.png)
 
     
 # 3. Resultados del análisis de sensibilidad
@@ -42,21 +42,24 @@ El modelo de clasificación a utilizar es Random Forest y utiliza:
 Al comparar gráficamente los scores obtenidos por cada hiperparámetro, se visualiza en cada uno la tendencia al aumentar el score.
 
 Max_depth, tiende a la baja cuando aumenta el score
-![alt text](image-5.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-5.png)
+
 
 Max_features, comparte el mismo comportamiento a la baja
 
-![alt text](image-6.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-6.png)
+
 
 Se observa que el único con tendencia al alza es max_samples, que en el ranking ocupó el lugar número 4.
 
-![alt text](image-7.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-7.png)
 
 
 
 # 5. Ranking de importancia de hiperparámetros
 Una vez ejecutado el modelo, se definió un ranking de importancia de correlación por score ordenando de mayor a menor cada Hiperparámetro
-![alt text](image-4.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-4.png)
+
 
 Así, max_features o el número de características evaluadas es el más relevante para nuestro modelo, pues controla cuántos atributos se consideran para dividir en cada nodo, la lectura que tenemos es que al existir variables mixtas (numéricas y categóricas) tienen un alto impacto en el modelo.
 
@@ -65,7 +68,8 @@ Así, max_features o el número de características evaluadas es el más relevan
 
 Una vez ejecutadas la exploración sistémica en su totalidad, se obtuvo que el modelo óptimo era el Espacio de búsqueda: C, cuya característica principal era la configuración ligera o rápida (liviana), llegando a un Score de 0.99, con menor profundidad, robustez y regularización, pero conservando el log2.
 
-![alt text](image-8.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-8.png)
+
 
 
 
@@ -85,5 +89,7 @@ Finalmente, el trabajo demuestra que la comprensión del comportamiento interno 
 
 Una vez ejecutadas la exploración sistémica en su totalidad, se obtuvo que el modelo óptimo era el Espacio de búsqueda: C, cuya característica principal era la configuración ligera o rápida (liviana), llegando a un Score de 0.99, con menor profundidad, robustez y regularización, pero conservando el log2.
 
-![alt text](image-9.png)
+![alt text](https://github.com/andreamr599/PROYECTO-INTEGRADOR-G1-VeriFactura/blob/main/Imagenes/image-9.png)
+
+
 
